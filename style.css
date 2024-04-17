@@ -12,9 +12,53 @@ h1 {
 h2 {
   font-size: 32px;
 }
+
 p {
   font-size: 20px;
 }
+
 a {
   font-size: 32px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 95%;
+}
+
+.header {
+  min-height: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header > header {
+  flex-basis: 60%;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header > nav {
+  flex-basis: 39%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > ul {
+  flex-basis: 95%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
 }
