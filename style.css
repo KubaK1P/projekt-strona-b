@@ -18,6 +18,10 @@ p {
 }
 
 a {
+  font-size: 20px;
+}
+
+li > a {
   font-size: 32px;
 }
 
@@ -61,4 +65,35 @@ nav > ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+}
+
+.main-content {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-content {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image {
+  flex-basis: 39%;
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
