@@ -3,6 +3,10 @@ body * {
   padding: 0;
   box-sizing: border-box;
   font-family: "IBM Plex Mono";
+  color: beige;
+}
+body {
+    background: darkslategray;
 }
 
 h1 {
@@ -80,6 +84,7 @@ nav > ul {
 }
 
 .text {
+  padding: 1rem;
   flex-basis: 60%;
   display: flex;
   justify-content: flex-start;
@@ -96,4 +101,54 @@ nav > ul {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer > footer {
+  min-height: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.media,
+.info {
+  padding: 1rem;
+  flex-basis: 30%;
+}
+
+.media-piece {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.media-piece2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.media-piece > p,
+.media-piece2 > p {
+  text-align: center;
+  flex-basis: 50%;
+}
+
+.smol-img {
+  width: 50px;
+  height: 50px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
