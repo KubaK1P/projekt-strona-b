@@ -6,15 +6,17 @@ body * {
   color: beige;
 }
 body {
-    background: darkslategray;
+  background: darkslategray;
 }
 
 h1 {
   font-size: 48px;
+  text-shadow: 4px 4px 0 black;
 }
 
 h2 {
   font-size: 32px;
+  text-shadow: 4px 4px 0 black;
 }
 
 p {
@@ -23,6 +25,7 @@ p {
 
 a {
   font-size: 20px;
+  text-shadow: 2px 2px 0 black;
 }
 
 li > a {
@@ -32,6 +35,11 @@ li > a {
 body {
   display: flex;
   justify-content: center;
+}
+
+img {
+  border-radius: 20px;
+  box-shadow: 10px 10px 0 black;
 }
 
 .container {
@@ -84,7 +92,7 @@ nav > ul {
 }
 
 .text {
-  padding: 1rem;
+  padding: 1.5rem;
   flex-basis: 60%;
   display: flex;
   justify-content: flex-start;
@@ -98,9 +106,13 @@ nav > ul {
 }
 
 .center {
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  border: 2px solid beige;
+  border-radius: 20px;
+  box-shadow: 10px 10px 0 black, 4px 4px 10px rgba(0, 0, 0, 0.5) inset;
 }
 
 .center-content {
