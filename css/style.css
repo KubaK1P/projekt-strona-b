@@ -3,20 +3,18 @@ body * {
   padding: 0;
   box-sizing: border-box;
   font-family: "IBM Plex Mono";
-  color: beige;
+  color: black;
 }
 body {
-  background: darkslategray;
+  background: white;
 }
 
 h1 {
   font-size: 48px;
-  text-shadow: 4px 4px 0 black;
 }
 
 h2 {
   font-size: 32px;
-  text-shadow: 4px 4px 0 black;
 }
 
 p {
@@ -25,7 +23,6 @@ p {
 
 a {
   font-size: 20px;
-  text-shadow: 2px 2px 0 black;
 }
 
 li > a {
@@ -39,7 +36,7 @@ body {
 
 img {
   border-radius: 20px;
-  box-shadow: 10px 10px 0 black;
+  box-shadow: 10px 10px 0 #aaaaaa;
 }
 
 .container {
@@ -76,7 +73,15 @@ nav > ul {
   flex-basis: 95%;
   list-style: none;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
+}
+
+@media (min-width: 1554px) {
+  nav > ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 .main-content {
@@ -110,9 +115,9 @@ nav > ul {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  border: 2px solid beige;
+  border: 2px solid black;
   border-radius: 20px;
-  box-shadow: 10px 10px 0 black, 4px 4px 10px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 10px 10px 0 #aaaaaa, 4px 4px 10px #aaaaaa80 inset;
 }
 
 .center-content {
