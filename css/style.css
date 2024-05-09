@@ -9,6 +9,10 @@ body {
   background: white;
 }
 
+.container {
+  width: 95%;
+}
+
 h1 {
   font-size: 48px;
 }
@@ -39,10 +43,6 @@ img {
   box-shadow: 10px 10px 0 #aaaaaa;
 }
 
-.container {
-  width: 95%;
-}
-
 .header {
   min-height: 10rem;
   display: flex;
@@ -67,6 +67,38 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+li.responsive-menu {
+  display: none;
+}
+
+.activated {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  li.responsive-menu {
+    display: block;
+    text-align: right;
+  }
+  nav > ul > li:not(:last-child) {
+    display: none;
+  }
+  .activated {
+    display: block;
+  }
+  .activated > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+  }
+  .list > li {
+    padding: .7rem;
+    background: #aaaaaa80;
+    border-radius: 20px;
+  }
 }
 
 nav > ul {
