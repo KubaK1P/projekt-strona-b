@@ -13,7 +13,7 @@ body {
   width: 95%;
 }
 
-h1 {
+h1, h1 > a {
   font-size: 48px;
 }
 
@@ -33,6 +33,36 @@ li > a {
   font-size: 32px;
 }
 
+@media (max-width: 564px) {
+
+h1, h1 > a {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  font-size: 16px;
+}
+
+li > a {
+  font-size: 22px;
+}
+
+.header {
+  min-height: 5rem;
+  max-height: 10rem;
+  height: 2.6rem;
+}
+
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -44,7 +74,9 @@ img {
 }
 
 .header {
-  min-height: 10rem;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  max-height: 10rem;
   display: flex;
   justify-content: space-between;
 }

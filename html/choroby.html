@@ -18,15 +18,19 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <header><h1>Psychoza: Popularne choroby</h1></header>
+      <div class="header" style="margin: 1.3rem 0;">
+        <header><h1><a href="../index.html">Psychoza</a>: Popularne choroby</h1></header>
         <nav class="navigation">
           <ul>
             <li><a href="#">Choroby</a></li>
             <li><a href="#">O mnie</a></li>
             <li><a href="#">O projekcie?</a></li>
+            <li class="responsive-menu"><a href="javascript:void(0);" onclick="showList()">Menu</a></li>
           </ul>
         </nav>
+      </div>
+      <div class="menu">
+        <span id="menu-add-span" class="menu-add-span"></span>
       </div>
       <div class="main-content">
         <aside class="image">
@@ -139,5 +143,19 @@
         </footer>
       </div>
     </div>
+    <script>
+const navPlace = document.getElementById("menu-add-span");
+
+function showList() {
+  console.log("Call");
+  if (navPlace.className == "menu-add-span") {
+    navPlace.className += " activated";
+    navPlace.innerHTML = `<ul class="list"><li><a href="#">Choroby</a></li><li><a href="#">O mnie</a></li><li><a href="#">O projekcie?</a></li></ul>`;
+  } else {
+    navPlace.className = "menu-add-span";
+    navPlace.innerHTML = "";
+  }
+}
+    </script>
   </body>
 </html>
