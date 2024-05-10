@@ -148,16 +148,29 @@ nav > ul {
   }
 }
 
-.main-content {
+.main-content, .section-content {
   margin: 2rem 0;
   display: flex;
   justify-content: space-between;
 }
 
-.section-content {
-  margin: 2rem 0;
-  display: flex;
-  justify-content: space-between;
+@media (max-width: 900px) {
+  .main-content, .section-content {
+    flex-direction: column;
+  }
+  .img-responsiv {
+    flex-basis: none;
+    max-width: 100%;
+  }
+  .image {
+    order: 1;
+    padding: 2rem;
+  }
+  .text {
+    align-self: center;
+    order: 2;
+    max-width: 30rem;
+  }
 }
 
 .text {
