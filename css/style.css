@@ -156,7 +156,7 @@ nav > ul {
 }
 
 @media (max-width: 900px) {
-  .main-content, .section-content {
+  .main-content, .section-content, #table-responsive {
     flex-direction: column;
   }
   .img-responsiv {
@@ -269,5 +269,17 @@ p {
 @media (max-width: 900px) {
   footer {
     flex-direction: column;
+  }
+}
+
+table * {
+  padding: 1rem .6rem;
+}
+
+@media (max-width: 1100px) {
+  table * {
+    margin: 3px;
+    font-size: 90%;
+    padding: .5rem 0; 
   }
 }
