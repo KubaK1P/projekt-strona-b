@@ -5,6 +5,7 @@ body * {
   font-family: "IBM Plex Mono";
   color: black;
 }
+
 body {
   background: white;
 }
@@ -152,6 +153,7 @@ nav > ul {
   margin: 2rem 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 900px) {
@@ -206,6 +208,10 @@ nav > ul {
 .end {
   display: flex;
   justify-content: flex-end;
+}
+
+.footer {
+  flex-basis: 100%;
 }
 
 .footer > footer {

@@ -8,7 +8,7 @@
       content="A site that describes and teaches you about mental illnesses"
     />
     <title>Psychoza</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,14 +17,14 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <header><h1><a href="#">Psychoza</a></h1></header>
+    <dddiv class="container">
+      <div class="header" style="margin: 1.3rem 0;">
+        <header><h1><a href="../index.html">Psychoza</a>: O mnie</h1></header>
         <nav class="navigation">
           <ul>
-            <li><a href="./html/choroby.html">Choroby</a></li>
-            <li><a href="./html/omnie.html">O mnie</a></li>
-            <li><a href="./html/oprojekcie.html">O projekcie?</a></li>
+            <li><a href="./choroby.html">Choroby</a></li>
+            <li><a href="#">O mnie</a></li>
+            <li><a href="#">O projekcie?</a></li>
             <li class="responsive-menu"><a href="javascript:void(0);" onclick="showList()">Menu</a></li>
           </ul>
         </nav>
@@ -33,54 +33,25 @@
         <span id="menu-add-span" class="menu-add-span"></span>
       </div>
       <div class="main-content">
+        <aside class="image">
+          <img src="https://picsum.photos/440/500?grayscale?random=1" class="img-responsiv" />
+        </aside>
         <main class="text">
           <div class="center">
             <div class="center-header">
               <header>
-                <h2>Choroby psychiczne. Co to?</h2>
+                <h2>Kim ja jestem?</h2>
               </header>
             </div>
             <div class="center-content">
               <p>
-                Choroby psychiczne to ogólne określenie zaburzeń o podłożu
-                psychicznym, które utrudniają funkcjonowanie w środowisku,
-                powodują cierpienie i mają negatywny wpływ na relacje
-                międzyludzkie.
+                Jestem chlopcem, mam 16 lat, ostatni raz programowałem w javascript 2 dni temu.
+                Gram na pianinie i na flecie. Czasami na komputerze. W pewnym sensie interesuję się psychologią i eksperymentami obejmującymi większe grupy ludzi w celu badania pewnych zależności natury psychologicznej.
               </p>
-              <div class="end">
-                <a href="#">Czytaj więcej...</a>
-              </div>
             </div>
           </div>
         </main>
-        <aside class="image">
-          <img src="https://picsum.photos/440/500?grayscale?random=1" class="img-responsiv" />
-        </aside>
-      </div>
-      <div class="section-content">
-        <aside class="image">
-          <img src="https://picsum.photos/440/500?grayscale?random=2" class="img-responsiv" />
-        </aside>
-        <section class="text">
-          <div class="center">
-            <div class="center-header">
-              <header><h2>Różne choroby psychiczne</h2></header>
-            </div>
-            <div class="center-content">
-              <p>
-                Choroby psychiczne mogą mieć różne podłoże i przebieg. Czasami o
-                ich pojawieniu się decyduje genetyka, a czasami doprowadza do
-                nich nadużywanie środków psychoaktywnych lub przebywanie w
-                destrukcyjnym środowisku. Niezależnie od tego, kluczowa dla
-                skutecznego leczenia jest odpowiednia diagnoza.
-              </p>
-              <div class="end">
-                <a href="./html/choroby.html">Czytaj więcej...</a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
       <div class="footer">
         <footer>
           <section class="media">
@@ -155,6 +126,19 @@
         </footer>
       </div>
     </div>
-    <script src="./js/navbar.js"></script>
+    <script>
+const navPlace = document.getElementById("menu-add-span");
+
+function showList() {
+  console.log("Call");
+  if (navPlace.className == "menu-add-span") {
+    navPlace.className += " activated";
+    navPlace.innerHTML = `<ul class="list"><li><a href="./choroby.html">Choroby</a></li><li><a href="#">O mnie</a></li><li><a href="#">O projekcie?</a></li></ul>`;
+  } else {
+    navPlace.className = "menu-add-span";
+    navPlace.innerHTML = "";
+  }
+}
+    </script>
   </body>
 </html>
