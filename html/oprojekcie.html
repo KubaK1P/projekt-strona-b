@@ -17,14 +17,14 @@
     />
   </head>
   <body>
-    <dddiv class="container">
+    <div class="container">
       <div class="header" style="margin: 1.3rem 0;">
-        <header><h1><a href="../index.html">Psychoza</a>: O mnie</h1></header>
+        <header><h1><a href="../index.html">Psychoza</a>: O projekcie</h1></header>
         <nav class="navigation">
           <ul>
             <li><a href="./choroby.html">Choroby</a></li>
-            <li><a href="#">O mnie</a></li>
-            <li><a href="./oprojekcie.html">O projekcie?</a></li>
+            <li><a href="./omnie.html">O mnie</a></li>
+            <li><a href="#">O projekcie?</a></li>
             <li class="responsive-menu"><a href="javascript:void(0);" onclick="showList()">Menu</a></li>
           </ul>
         </nav>
@@ -40,13 +40,12 @@
           <div class="center">
             <div class="center-header">
               <header>
-                <h2>Kim ja jestem?</h2>
+                <h2>Co to za projekt?</h2>
               </header>
             </div>
             <div class="center-content">
               <p>
-                Jestem chlopcem, mam 16 lat, ostatni raz programowałem w javascript 2 dni temu.
-                Gram na pianinie i na flecie. Czasami na komputerze. W pewnym sensie interesuję się psychologią i eksperymentami obejmującymi większe grupy ludzi w celu badania pewnych zależności natury psychologicznej.
+                Projekt na projektowanie stron internetowych &trade;
               </p>
             </div>
           </div>
@@ -133,7 +132,7 @@ function showList() {
   console.log("Call");
   if (navPlace.className == "menu-add-span") {
     navPlace.className += " activated";
-    navPlace.innerHTML = `<ul class="list"><li><a href="./choroby.html">Choroby</a></li><li><a href="#">O mnie</a></li><li><a href="./oprojekcie.html">O projekcie?</a></li></ul>`;
+    navPlace.innerHTML = `<ul class="list"><li><a href="./choroby.html">Choroby</a></li><li><a href="./omnie.html">O mnie</a></li><li><a href="#">O projekcie?</a></li></ul>`;
   } else {
     navPlace.className = "menu-add-span";
     navPlace.innerHTML = "";
