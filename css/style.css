@@ -186,6 +186,7 @@ nav > ul {
   flex-basis: 39%;
   display: flex;
   justify-content: center;
+  max-height: 450px;
 }
 
 .center {
