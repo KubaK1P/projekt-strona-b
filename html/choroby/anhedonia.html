@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A site that describes and teaches you about mental illnesses"
+    />
+    <title>Psychoza</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+    @media (max-width: 1800px) {
+      .main-content {
+        flex-direction: column;
+      } 
+      .text {
+    align-self: center;
+      width: 75%;
+    }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="margin: 1.3rem 0;">
+        <header><h1><a href="../../index.html">Psychoza</a>: Anhedonia </h1></header>
+        <nav class="navigation">
+          <ul>
+            <li><a href="../choroby.html">Choroby</a></li>
+            <li><a href="../omnie.html">O mnie</a></li>
+            <li><a href="../oprojekcie.html">O projekcie?</a></li>
+            <li class="responsive-menu"><a href="javascript:void(0);" onclick="showList()">Menu</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu">
+        <span id="menu-add-span" class="menu-add-span"></span>
+      </div>
+      <div class="main-content">
+        <aside class="image">
+          <img src="../../img/sad.jpg" class="img-responsiv" />
+        </aside>
+        <main class="text">
+          <div class="center">
+            <div class="center-header">
+              <header>
+                <h2>Anhedonia</h2>
+              </header>
+            </div>
+            <div class="center-content">
+              <p>
+                Anhedonia to termin pochodzący z greki, który tłumacząc niemal dosłownie oznacza „brak przyjemności” (z gr.: an – „bez”, hedone – „przyjemność”). Jest to objaw różnego rodzaju zaburzeń psychicznych, który najogólniej ujmując, polega właśnie na tym, że dana osoba nie jest w stanie czerpać przyjemności z tego, co dotychczas ją przynosiło lub poziom odczuwanej przyjemności jest znacznie mniejszy niż wcześniej.
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="footer">
+        <footer>
+          <section class="media">
+            <div class="media-piece">
+              <img
+                src="../../img/2023_Facebook_icon.svg"
+                alt="nothing"
+                class="smol-img"
+              />
+              <div>
+              <p>Facebook</p>
+              </div>
+            </div>
+            <div class="media-piece2">
+              <div>
+              <p>Instagram</p>
+              </div>
+              <img
+                src="../../img/Instagram_logo_2016.svg"
+                alt="nothing"
+                class="smol-img"
+              />
+            </div>
+            <div class="media-piece">
+              <img
+                src="../../img/Telegram_logo.svg.webp"
+                alt="nothing"
+                class="smol-img"
+              />
+              <div>
+              <p>Telegram</p>
+              </div>
+            </div>
+          </section>
+          <section class="media">
+            <div class="media-piece">
+              <img
+                src="../../img/free-snapchat-144-721971.png"
+                alt="nothing"
+                class="smol-img"
+              />
+              <div>
+              <p>Snapchat</p>
+              </div>
+            </div>
+            <div class="media-piece2">
+              <div>
+              <p>X</p>
+              </div>
+              <img
+                src="../../img/X_logo_2023.svg"
+                alt="nothing"
+                class="smol-img"
+              />
+            </div>
+            <div class="media-piece">
+              <img
+                src="../../img/BeReal._Logo.svg.png"
+                alt="nothing"
+                class="smol-img"
+              />
+              <div>
+              <p>Bereal</p>
+              </div>
+            </div>
+          </section>
+          <section class="info">
+            <div class="info-piece"><p>+48 516 483 655</p></div>
+            <div class="info-piece"><p>kubakus6224@gmail.com</p></div>
+            <div class="info-piece"><p>Tęczowa 32, Zabrze, Polska</p></div>
+          </section>
+        </footer>
+      </div>
+    </div>
+    <script>
+const navPlace = document.getElementById("menu-add-span");
+
+function showList() {
+  console.log("Call");
+  if (navPlace.className == "menu-add-span") {
+    navPlace.className += " activated";
+    navPlace.innerHTML = `<ul class="list"><li><a href="../choroby.html">Choroby</a></li><li><a href="../omnie.html">O mnie</a></li><li><a href="../oprojekcie.html">O projekcie?</a></li></ul>`;
+  } else {
+    navPlace.className = "menu-add-span";
+    navPlace.innerHTML = "";
+  }
+}
+    </script>
+  </body>
+</html>
