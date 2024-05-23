@@ -106,6 +106,17 @@ li.responsive-menu {
   display: none;
 }
 
+li > a {
+  transition-duration: 200ms;
+  border-radius: 10px;
+  padding: 1rem;
+}
+li > a:hover {
+  color: red;
+  transition-duration: 200ms;
+  background: #aaaaaa80;
+}
+
 .activated {
   display: none;
 }
@@ -130,7 +141,7 @@ li.responsive-menu {
   .list > li {
     padding: .7rem;
     background: #aaaaaa80;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 }
 
